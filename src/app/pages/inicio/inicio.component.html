@@ -1,1 +1,12 @@
-<p>inicio works!</p>
+<div class="contenedor">
+<form class="example-form formulario">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Escribir</mat-label>
+      <input style="color: white;" [formControl]="data" name="data" matInput placeholder="Ex. Pizza">
+    </mat-form-field>
+    <hr />
+    <div style="color: white; margin-top: 1rem;">
+        <label>{{ datos }}</label>
+    </div>
+</form>
+</div>
