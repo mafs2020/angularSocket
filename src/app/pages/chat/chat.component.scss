@@ -31,3 +31,22 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.boton{
+    position: fixed;
+    width: 50px;
+    height: auto;
+    top: 5rem;
+    right: 5rem;
+    z-index: 1;
+}
+
+.a{
+    padding: 1rem;
+    background-color: #191A19;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+// import { Router } from '@angular/router';
 import { SocketCustomService } from 'src/app/socket-custom.service';
 
 @Component({
@@ -10,7 +11,10 @@ import { SocketCustomService } from 'src/app/socket-custom.service';
 export class InicioComponent implements OnInit {
   data: FormControl = new FormControl('');
   datos: string = '';
-  constructor(private socketService: SocketCustomService) { }
+  constructor(
+    private socketService: SocketCustomService,
+    // private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.data.valueChanges.subscribe(data => {
@@ -32,4 +36,7 @@ export class InicioComponent implements OnInit {
     this.socketService.sendMessage(data);
   }
 
+  // chat(){
+  //   this.router.navigate(['chat']);
+  // }
 }
