@@ -1,0 +1,9 @@
+<div class="contenedor">
+    <div class="chat">
+        <p *ngFor="let item of textos">{{ item }}</p>
+    </div>
+    <div class="botones">
+        <input [(ngModel)]="texto" type="text" name="nombre" id="">
+        <button (click)="enviar()" >enviar</button>
+    </div>
+</div>

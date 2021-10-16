@@ -17,4 +17,13 @@ export class SocketCustomService {
     return this.socket.fromEvent('todos')
     .pipe(tap((data:any) => console.log('observa todos :>> ', data)));
   }
+
+  sendMessageChat(msg: string) {
+    this.socket.emit('messageChat', msg);
+  }
+
+  getMessageChat(): Observable<any> {
+    return this.socket.fromEvent('todosChat')
+    .pipe(tap((data:any) => console.log('observa todos :>> ', data)));
+  }
 }

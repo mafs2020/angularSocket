@@ -7,11 +7,13 @@ import { InicioComponent } from './inicio/inicio.component';
 
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
     PagesComponent,
-    InicioComponent
+    InicioComponent,
+    ChatComponent
   ],
   imports: [
     CommonModule,
