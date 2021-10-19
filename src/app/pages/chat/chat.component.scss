@@ -52,3 +52,10 @@
     color: #fff;
     text-decoration: none;
 }
+.botonEnvir{
+    background-color: #191A19;
+    color: #fff;
+    &:hover{
+        box-shadow: 0px 0px 6px #191A19;
+    }
+}

@@ -7,6 +7,6 @@
     </div>
     <div class="botones">
         <input [(ngModel)]="texto" type="text" name="nombre" id="">
-        <button [disabled]="texto === ''" (click)="enviar()" >enviar</button>
+        <button class="botonEnvir" mat-button color="primary" [disabled]="texto === ''" (click)="enviar()" >enviar</button>
     </div>
 </div>
